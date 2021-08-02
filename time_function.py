@@ -418,7 +418,7 @@ def iterations_ni_indiv_time(act_user, time, load_matrix, operator_action, data=
             a_f = next_a_f
         else:
             print("NO UPDATE")
-            return a_o, a_f
+            return a_o, a_f, data
 
         print("EC  :", get_ec(act_user, time, load_matrix, a_o, a_f))
         print("PAR :", get_par(act_user, time, load_matrix, a_o, a_f))
